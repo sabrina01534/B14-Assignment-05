@@ -9,10 +9,10 @@ interface ISelectedPlayer{
 }
 
 const SelectedCard = ({selectCard,setSelectCard}:ISelectedPlayer) => {
-
-    if(selectCard.length===0){
-        return  <p className='text-gray-500'>No technologies selected yet.</p>
-    }
+console.log(selectCard,"from selected")
+    // if(selectCard.length===0){
+    //     return  <p className='text-gray-500'>No technologies selected yet.</p>
+    // }
     return (
         <div className='col-span-3 border border-gray-100'>
         {selectCard.map((card:Icard ,ind:number)=>{
@@ -20,7 +20,7 @@ const SelectedCard = ({selectCard,setSelectCard}:ISelectedPlayer) => {
             <RemoveCard key={ind} selectCard={selectCard} setSelectCard={setSelectCard}/>
          )   
         })}
-</div>>
+</div>
     );
 };
 

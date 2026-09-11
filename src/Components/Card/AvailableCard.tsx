@@ -5,9 +5,9 @@ import type { Icard } from '../../Type/CardType';
 import NewCard from './NewCard';
 
 interface IAvaialablecard{
-   
-    selectCard:object[]
-    setSelectCard:Dispatch<SetStateAction<object[]>>
+   card:Icard;
+    selectCard:Icard[];
+    setSelectCard:Dispatch<SetStateAction<Icard[]>>
 }
 
 
