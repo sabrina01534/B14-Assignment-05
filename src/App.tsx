@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { Suspense, useState } from 'react';
 import Banner from './Components/Banner'
 import Card from './Components/Card/Card';
 import Navbar from './Components/Navbar'
@@ -11,6 +11,7 @@ const cardFetch=async ():Promise<Icard[]>=>{
 }
 
 function App() {
+ 
 const cardPromise=cardFetch()
   return (
     <>

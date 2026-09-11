@@ -46,12 +46,12 @@ const AvailableCard = ({card,selectCard,setSelectCard}:IAvaialablecard) => {
               })}
              </div>
             </div>
-            <div className='col-span-3 border border-gray-100'>
+            {/* <div className='col-span-3 border border-gray-100'>
 <div>
     <h1 className='text-2xl font-bold'>Your Stack</h1>
-    <p className='text-gray-500'>No technologies selected yet.</p>
+   
 </div>
-            </div>
+            </div> */}
         </div>
     );
 };

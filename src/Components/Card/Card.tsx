@@ -12,7 +12,7 @@ interface CardProps{
 
 
 const Card = ({cardPromise}:CardProps) => {
-    console.log(cardPromise)
+    // console.log(cardPromise)
     const card=use(cardPromise);
     console.log(card,card)
     return (

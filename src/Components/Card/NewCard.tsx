@@ -1,11 +1,21 @@
 
-
+import console from 'console';
 import type { Icard } from '../../Type/CardType';
 import { FaStar } from 'react-icons/fa';
+import { useState } from 'react';
 
+// const handleButton=(type:"selected"){
+//     setButton(type)
+// }
 
 
 const NewCard = ({cart}:{cart:Icard}) => {
+
+    const[isSelected,setIsSelected]=useState(false)
+
+    const handleSelectCard=()=>{
+setIsSelected(true)
+    }
     return (
                         <div><div className="card card-dash bg-base-100">
          <div className="card-body border border-gray-100 rounded h-60">
@@ -22,7 +32,7 @@ const NewCard = ({cart}:{cart:Icard}) => {
            </div>
        
            <div className="card-actions">
-             <button className="btn bg-black w-full text-white">Buy Now</button>
+             <button onClick={()=>handleSelectCard()} className="btn bg-black w-full text-white">{isSelected===true?"Selected":"Choose Card"}</button>
            </div>
          </div>
        </div></div>
