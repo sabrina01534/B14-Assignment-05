@@ -1,0 +1,122 @@
+[
+  {
+    "icon": "⚛️",
+    "title": "React",
+    "type": "Library",
+    "paragraph": "A popular JavaScript library for building fast and interactive user interfaces.",
+    "userExperience": "Intermediate",
+    "workingOn": "Frontend",
+    "rating": 4.8,
+    "button": "Add to Stack"
+  },
+  {
+    "icon": "🟨",
+    "title": "JavaScript",
+    "type": "Language",
+    "paragraph": "A powerful programming language for creating interactive web applications.",
+    "userExperience": "Beginner Friendly",
+    "workingOn": "Frontend & Backend",
+    "rating": 4.9,
+    "button": "Add to Stack"
+  },
+  {
+    "icon": "🟦",
+    "title": "TypeScript",
+    "type": "Language",
+    "paragraph": "A strongly typed language built on JavaScript for developing reliable applications.",
+    "userExperience": "Intermediate",
+    "workingOn": "Frontend & Backend",
+    "rating": 4.7,
+    "button": "Add to Stack"
+  },
+  {
+    "icon": "🟢",
+    "title": "Node.js",
+    "type": "Standard",
+    "paragraph": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
+    "userExperience": "Intermediate",
+    "workingOn": "Backend",
+    "rating": 4.8,
+    "button": "Add to Stack"
+  },
+  {
+    "icon": "🟩",
+    "title": "Express.js",
+    "type": "Framework",
+    "paragraph": "A lightweight Node.js framework for building web servers and REST APIs.",
+    "userExperience": "Intermediate",
+    "workingOn": "Backend",
+    "rating": 4.6,
+    "button": "Add to Stack"
+  },
+  {
+    "icon": "🔥",
+    "title": "Firebase",
+    "type": "BaaS",
+    "paragraph": "A platform that provides authentication, hosting, and other backend services.",
+    "userExperience": "Beginner Friendly",
+    "workingOn": "Backend",
+    "rating": 4.7,
+    "button": "Add to Stack"
+  },
+  {
+    "icon": "🌐",
+    "title": "HTML",
+    "type": "Standard",
+    "paragraph": "The standard markup language used to structure content on the web.",
+    "userExperience": "Beginner Friendly",
+    "workingOn": "Frontend",
+    "rating": 4.9,
+    "button": "Add to Stack"
+  },
+  {
+    "icon": "🎨",
+    "title": "CSS",
+    "type": "Standard",
+    "paragraph": "A stylesheet language used to design and create responsive web pages.",
+    "userExperience": "Beginner Friendly",
+    "workingOn": "Frontend",
+    "rating": 4.9,
+    "button": "Add to Stack"
+  },
+  {
+    "icon": "🍃",
+    "title": "MongoDB",
+    "type": "Database",
+    "paragraph": "A NoSQL database designed for flexible and scalable applications.",
+    "userExperience": "Intermediate",
+    "workingOn": "Backend",
+    "rating": 4.6,
+    "button": "Add to Stack"
+  },
+  {
+    "icon": "▲",
+    "title": "Next.js",
+    "type": "SSR / Edge",
+    "paragraph": "The React framework for full-stack web applications with hybrid static and server rendering.",
+    "userExperience": "Intermediate",
+    "workingOn": "Frontend",
+    "rating": 4.9,
+    "button": "Add to Stack"
+  },
+  {
+    "icon": "🐍",
+    "title": "Python",
+    "type": "Language",
+    "paragraph": "A versatile programming language widely used for web development, automation, data science, and artificial intelligence.",
+    "userExperience": "Beginner Friendly",
+    "workingOn": "Backend",
+    "rating": 4.9,
+    "button": "Add to Stack"
+  },
+  {
+    "icon": "🐘",
+    "title": "PostgreSQL",
+    "type": "Database",
+    "paragraph": "A powerful open-source relational database system known for reliability, flexibility, and advanced data management.",
+    "userExperience": "Intermediate",
+    "workingOn": "Backend",
+    "rating": 4.8,
+    "button": "Add to Stack"
+  }
+]
