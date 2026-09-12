@@ -4,6 +4,7 @@ import type { Icard } from '../../Type/CardType';
 // import { FaStar } from 'react-icons/fa';
 import NewCard from './NewCard';
 import RemoveCard from './RemoveCard';
+import { CiSquareRemove } from 'react-icons/ci';
 
 interface IAvaialablecard{
    card:Icard;
@@ -64,17 +65,21 @@ const AvailableCard = ({card,handleSelectCard ,selectCard ,setSelectCard}:IAvaia
     <div className='border border-gray-200 rounded-xl mt-4 ml-2 pl-3'>
     <div className='flex gap-2 text-center'>
             {/* <p className='text-center items-center mt-3.5'> {cart.icon}</p> */}
-       <img className='text-center items-center mt-3.5 h-10 w-10' src={cart.icon} alt=""/>
+       <img className='text-center items-center mt-2 h-10 w-10' src={cart.icon} alt=""/>
     <div>
         <p className='text-xl text-gray-500'>{cart.title}</p>
         <p className='text-gray-500'>{cart.type}</p>
+        {/* <span className='cursor-pointer'><CiSquareRemove /></span> */}
     </div>
     </div>
     </div>
-   
 
    ))}
-    {/* <RemoveCard/> */}
+    {selectCard.length>0 &&(
+    <button onClick={()=>setSelectCard([])} className='mt-5 cursor-pointer btn bg-gradient-to-r from-[#F97316] 
+    to-[#EC4899] w-full text-white'>Remove All</button>
+   )}
+   
 </>
 )}
    
