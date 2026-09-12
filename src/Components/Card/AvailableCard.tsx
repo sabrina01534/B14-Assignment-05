@@ -3,7 +3,7 @@ import type { Dispatch, SetStateAction } from 'react';
 import type { Icard } from '../../Type/CardType';
 // import { FaStar } from 'react-icons/fa';
 import NewCard from './NewCard';
-import RemoveCard from './RemoveCard';
+
 import { CiSquareRemove } from 'react-icons/ci';
 
 interface IAvaialablecard{
@@ -15,14 +15,21 @@ interface IAvaialablecard{
 
 
 const AvailableCard = ({card,handleSelectCard ,selectCard ,setSelectCard}:IAvaialablecard) => {
-    console.log(card, "from available")
+    // console.log(card, "from available")
+
+const handlRemoveButton=(cart:Icard)=>{
+    
+    const restCard=selectCard.filter(card=>cart.title !=card.title)
+//    console.log(restCard,"clicked")
+    setSelectCard(restCard)
+}
     return (
 
         <div className='grid grid-cols-12 gap-2'>
             <div className='h-200 col-span-9'>
              <div className='grid grid-cols-3 gap-4'>
                  {card.map((cart:Icard,ind:number)=>{
-                    // const Icon=cart.icon
+                   
                 return(
                    <NewCard key={ind} cart={cart} handleSelectCard={handleSelectCard}/>
                     
@@ -61,15 +68,19 @@ const AvailableCard = ({card,handleSelectCard ,selectCard ,setSelectCard}:IAvaia
    <>
     <p>{selectCard.length} :Technologies selected</p>
    
-   {selectCard.map((cart)=>(
-    <div className='border border-gray-200 rounded-xl mt-4 ml-2 pl-3'>
-    <div className='flex gap-2 text-center'>
+   {selectCard.map((cart:Icard,ind:number)=>(
+    <div key={ind} className='border border-gray-200 rounded-xl mt-4 ml-2 pl-3'>
+    <div className='flex gap-2 text-center w-full'>
             {/* <p className='text-center items-center mt-3.5'> {cart.icon}</p> */}
        <img className='text-center items-center mt-2 h-10 w-10' src={cart.icon} alt=""/>
-    <div>
-        <p className='text-xl text-gray-500'>{cart.title}</p>
+    <div className='flex w-full items-center'>
+        <div className='ml-1'>
+            <p className='text-xl text-gray-500'>{cart.title}</p>
         <p className='text-gray-500'>{cart.type}</p>
-        {/* <span className='cursor-pointer'><CiSquareRemove /></span> */}
+        </div>
+       
+            <span className='cursor-pointer mr-4 ml-auto'><CiSquareRemove className='text-2xl' onClick={()=>handlRemoveButton(cart)}/></span>
+       
     </div>
     </div>
     </div>
