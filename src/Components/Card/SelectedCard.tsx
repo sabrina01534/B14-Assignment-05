@@ -9,7 +9,7 @@ interface ISelectedPlayer{
 }
 
 const SelectedCard = ({selectCard,setSelectCard}:ISelectedPlayer) => {
-console.log(selectCard,"from selected")
+// console.log(selectCard,"from selected")
     // if(selectCard.length===0){
     //     return  <p className='text-gray-500'>No technologies selected yet.</p>
     // }

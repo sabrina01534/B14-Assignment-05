@@ -50,7 +50,23 @@ const AvailableCard = ({card,handleSelectCard ,selectCard ,setSelectCard}:IAvaia
             <div className='col-span-3 border border-gray-100'>
 <div>
     <h1 className='text-2xl font-bold'>Your Stack</h1>
-   <p>Card:{selectCard.length}</p>
+   {selectCard.length===0?
+    <>
+     <p className='text-gray-500'>No technologies selected yet.</p>
+   
+    </>:(
+   <>
+    <p>{selectCard.length}technologies selected</p>
+   
+   {selectCard.map((cart)=>(
+    <div key={cart.icon}>
+    <p>{cart.title}</p>
+    </div>
+
+   ))}
+</>
+)}
+   
 </div>
             </div>
         </div>

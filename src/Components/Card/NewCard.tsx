@@ -37,7 +37,7 @@ handleSelectCard(cart)
            </div>
        
            <div className="card-actions">
-             <button onClick={()=>handleClickCard()} className="btn bg-gradient-to-r from-[#F97316] to-[#EC4899] w-full text-white">Buy Now</button>
+             <button onClick={()=>handleClickCard(cart)} className="btn bg-gradient-to-r from-[#F97316] to-[#EC4899] w-full text-white">Buy Now</button>
            </div>
          </div>
        </div></div>
