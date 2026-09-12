@@ -3,6 +3,7 @@ import type { Dispatch, SetStateAction } from 'react';
 import type { Icard } from '../../Type/CardType';
 // import { FaStar } from 'react-icons/fa';
 import NewCard from './NewCard';
+import RemoveCard from './RemoveCard';
 
 interface IAvaialablecard{
    card:Icard;
@@ -52,18 +53,28 @@ const AvailableCard = ({card,handleSelectCard ,selectCard ,setSelectCard}:IAvaia
     <h1 className='text-2xl font-bold'>Your Stack</h1>
    {selectCard.length===0?
     <>
-     <p className='text-gray-500'>No technologies selected yet.</p>
+     <p className='text-gray-500'> No technologies selected yet.</p>
+     <p className='border border-dashed border-gray-200 mt-10 rounded text-center p-5'>Your stack is empty. </p>
    
     </>:(
    <>
-    <p>{selectCard.length}technologies selected</p>
+    <p>{selectCard.length} :Technologies selected</p>
    
    {selectCard.map((cart)=>(
-    <div key={cart.icon}>
-    <p>{cart.title}</p>
+    <div className='border border-gray-200 rounded-xl mt-4 ml-2 pl-3'>
+    <div className='flex gap-2 text-center'>
+            {/* <p className='text-center items-center mt-3.5'> {cart.icon}</p> */}
+       <img className='text-center items-center mt-3.5 h-10 w-10' src={cart.icon} alt=""/>
+    <div>
+        <p className='text-xl text-gray-500'>{cart.title}</p>
+        <p className='text-gray-500'>{cart.type}</p>
     </div>
+    </div>
+    </div>
+   
 
    ))}
+    {/* <RemoveCard/> */}
 </>
 )}
    

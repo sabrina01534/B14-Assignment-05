@@ -3,6 +3,7 @@ import Banner from './Components/Banner'
 import Card from './Components/Card/Card';
 import Navbar from './Components/Navbar'
 import type { Icard } from './Type/CardType';
+import { ToastContainer } from 'react-toastify';
 
 const cardFetch=async ():Promise<Icard[]>=>{
   const res=await fetch("/data.json");
@@ -20,6 +21,7 @@ const cardPromise=cardFetch()
    <Suspense fallback="loading.......!">
     <Card cardPromise={cardPromise}/>
    </Suspense>
+   <ToastContainer />
 
     </>
   )

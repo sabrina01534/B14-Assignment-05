@@ -26,6 +26,7 @@ const RemoveCard = ({selectCard,setSelectCard}:IRemoveCard) => {
                     </div>
                     </div>
                     <span className='cursor-pointer' onClick={()=>handlRemoveButton(cart)}><CiSquareRemove /></span>
+                <button className='cursor-pointer btn bg-gradient-to-r from-[#F97316] to-[#EC4899] w-full text-white'>Remove All</button>
                 </div>
              )
             })}

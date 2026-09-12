@@ -2,6 +2,7 @@ import { use, useState } from "react";
 import type { Icard } from "../../Type/CardType";
 import AvailableCard from "./AvailableCard";
 import SelectedCard from "./SelectedCard";
+import RemoveCard from "./RemoveCard";
 
 interface CardProps {
   cart: Icard;
@@ -37,6 +38,7 @@ const Card = ({ cardPromise }: CardProps) => {
         setSelectCard={setSelectCard}
       />
       <SelectedCard selectCard={selectCard} setSelectCard={setSelectCard} />
+    {/* <RemoveCard selectCard={selectCard} setSelectCard={setSelectCard}/> */}
     </div>
   );
 };
