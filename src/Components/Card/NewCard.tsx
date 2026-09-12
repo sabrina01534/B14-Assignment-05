@@ -10,20 +10,16 @@ import { useState, type Dispatch, type SetStateAction } from 'react';
 
 interface InewCardProps{
     cart:Icard;
-      selectCard:Icard[];
-        setSelectCard:Dispatch<SetStateAction<Icard[]>>
+    handleSelectCard:(card:Icard)=>void
 }
 
-const NewCard = ({cart,selectCard,setSelectCard}:InewCardProps) => {
+const NewCard = ({cart,handleSelectCard}:InewCardProps) => {
 
     // const[isSelected,setIsSelected]=useState(false)
 
-    const handleSelectCard=()=>{
-        if(selectCard.length===0){
-
-        return  <p className='text-gray-500'>No technologies selected yet.</p>
-    }
-setSelectCard([...selectCard,cart])
+    const handleClickCard=()=>{
+    
+handleSelectCard(cart)
     }
     return (
                         <div><div className="card card-dash bg-base-100">
@@ -41,7 +37,7 @@ setSelectCard([...selectCard,cart])
            </div>
        
            <div className="card-actions">
-             <button onClick={()=>handleSelectCard()} className="btn bg-black w-full text-white">Buy Now</button>
+             <button onClick={()=>handleClickCard()} className="btn bg-gradient-to-r from-[#F97316] to-[#EC4899] w-full text-white">Buy Now</button>
            </div>
          </div>
        </div></div>

@@ -15,9 +15,9 @@ const RemoveCard = ({selectCard,setSelectCard}:IRemoveCard) => {
     }
     return (
         <div className='grid grid-cols-1 '>
-            {selectCard.map((cart:Icard)=>{
+            {selectCard.map((cart:Icard, ind:number)=>{
              return(
-                <div className='flex gap-2 justify-between'>
+                <div key={ind} className='flex gap-2 justify-between'>
                     <div className='flex gap-2'>
                       <img src={cart.icon} alt="" />
                       <div>

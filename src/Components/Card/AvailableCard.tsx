@@ -6,12 +6,13 @@ import NewCard from './NewCard';
 
 interface IAvaialablecard{
    card:Icard;
-    selectCard:Icard[];
-    setSelectCard:Dispatch<SetStateAction<Icard[]>>
+        selectCard:Icard[]
+        setSelectCard:Dispatch<SetStateAction<Icard[]>>
+   handleSelectCard:Icard[]
 }
 
 
-const AvailableCard = ({card,selectCard,setSelectCard}:IAvaialablecard) => {
+const AvailableCard = ({card,handleSelectCard ,selectCard ,setSelectCard}:IAvaialablecard) => {
     console.log(card, "from available")
     return (
 
@@ -21,7 +22,7 @@ const AvailableCard = ({card,selectCard,setSelectCard}:IAvaialablecard) => {
                  {card.map((cart:Icard,ind:number)=>{
                     // const Icon=cart.icon
                 return(
-                   <NewCard key={ind} cart={cart} selectCard={selectCard} setSelectCard={setSelectCard}/>
+                   <NewCard key={ind} cart={cart} handleSelectCard={handleSelectCard}/>
                     
 //                     <div><div className="card card-dash bg-base-100">
 //   <div className="card-body border border-gray-100 rounded h-60">
@@ -46,12 +47,12 @@ const AvailableCard = ({card,selectCard,setSelectCard}:IAvaialablecard) => {
               })}
              </div>
             </div>
-            {/* <div className='col-span-3 border border-gray-100'>
+            <div className='col-span-3 border border-gray-100'>
 <div>
     <h1 className='text-2xl font-bold'>Your Stack</h1>
-   
+   <p>Card:{selectCard.length}</p>
 </div>
-            </div> */}
+            </div>
         </div>
     );
 };
