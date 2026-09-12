@@ -1,11 +1,11 @@
 import { use, useState } from "react";
 import type { Icard } from "../../Type/CardType";
 import AvailableCard from "./AvailableCard";
-import SelectedCard from "./SelectedCard";
-import RemoveCard from "./RemoveCard";
+// import SelectedCard from "./SelectedCard";
+
 
 interface CardProps {
-  cart: Icard;
+  
   cardPromise: Promise<Icard[]>;
 }
 
@@ -21,9 +21,9 @@ const Card = ({ cardPromise }: CardProps) => {
   return (
     <div className="w-11/12 mx-auto">
       <div>
-        <h1 className="text-3xl font-bold mt-20">
+        <h1 className="text-3xl font-bold mt-5">
           Explore the
-          <span className="bg-gradient-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">
             Technologies
           </span>
         </h1>
@@ -37,7 +37,7 @@ const Card = ({ cardPromise }: CardProps) => {
         selectCard={selectCard}
         setSelectCard={setSelectCard}
       />
-      <SelectedCard selectCard={selectCard} setSelectCard={setSelectCard} />
+      {/* <SelectedCard selectCard={selectCard} setSelectCard={setSelectCard} /> */}
     {/* <RemoveCard selectCard={selectCard} setSelectCard={setSelectCard}/> */}
     </div>
   );

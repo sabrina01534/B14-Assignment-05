@@ -3,120 +3,120 @@
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
     "title": "React",
     "type": "Library",
-    "paragraph": "A popular JavaScript library for building fast and interactive user interfaces.",
+    "paragraph": "A JavaScript library for building fast and interactive user interfaces.",
     "userExperience": "Intermediate",
     "workingOn": "Frontend",
     "rating": 4.8,
-    "button": "Add to Stack"
+    "button": "Buy Now"
   },
   {
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     "title": "JavaScript",
     "type": "Language",
-    "paragraph": "A powerful programming language for creating interactive web applications.",
+    "paragraph": "A powerful language for creating interactive and dynamic web applications.",
     "userExperience": "Beginner Friendly",
-    "workingOn": "Frontend & Backend",
+    "workingOn": "Frontend",
     "rating": 4.9,
-    "button": "Add to Stack"
+    "button": "Buy Now"
   },
   {
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
     "title": "TypeScript",
     "type": "Language",
-    "paragraph": "A strongly typed language built on JavaScript for developing reliable applications.",
+    "paragraph": "A strongly typed language built on JavaScript for reliable applications.",
     "userExperience": "Intermediate",
-    "workingOn": "Frontend & Backend",
+    "workingOn": "Frontend",
     "rating": 4.7,
-    "button": "Add to Stack"
+    "button": "Buy Now"
   },
   {
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg",
     "title": "Node.js",
-    "type": "Standard",
-    "paragraph": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
+    "type": "Runtime",
+    "paragraph": "A JavaScript runtime for building fast and scalable backend applications.",
     "userExperience": "Intermediate",
     "workingOn": "Backend",
     "rating": 4.8,
-    "button": "Add to Stack"
+    "button": "Buy Now"
   },
   {
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
     "title": "Express.js",
     "type": "Framework",
-    "paragraph": "A lightweight Node.js framework for building web servers and REST APIs.",
+    "paragraph": "A lightweight Node.js framework for building web servers and APIs.",
     "userExperience": "Intermediate",
     "workingOn": "Backend",
     "rating": 4.6,
-    "button": "Add to Stack"
+    "button": "Buy Now"
   },
   {
-    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+    "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-plain.svg",
     "title": "Firebase",
-    "type": "BaaS",
-    "paragraph": "A platform that provides authentication, hosting, and other backend services.",
+    "type": "Platform",
+    "paragraph": "A platform providing authentication, hosting, databases, and cloud services.",
     "userExperience": "Beginner Friendly",
     "workingOn": "Backend",
     "rating": 4.7,
-    "button": "Add to Stack"
+    "button": "Buy Now"
   },
   {
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
     "title": "HTML",
-    "type": "Standard",
-    "paragraph": "The standard markup language used to structure content on the web.",
+    "type": "Language",
+    "paragraph": "The standard markup language used to structure modern web pages.",
     "userExperience": "Beginner Friendly",
     "workingOn": "Frontend",
     "rating": 4.9,
-    "button": "Add to Stack"
+    "button": "Buy Now"
   },
   {
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
     "title": "CSS",
-    "type": "Standard",
-    "paragraph": "A stylesheet language used to design and create responsive web pages.",
+    "type": "Language",
+    "paragraph": "A styling language used to design and layout beautiful web pages.",
     "userExperience": "Beginner Friendly",
     "workingOn": "Frontend",
-    "rating": 4.9,
-    "button": "Add to Stack"
+    "rating": 4.8,
+    "button": "Buy Now"
   },
   {
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
     "title": "MongoDB",
     "type": "Database",
-    "paragraph": "A NoSQL database designed for flexible and scalable applications.",
+    "paragraph": "A flexible NoSQL database designed for modern applications and data.",
     "userExperience": "Intermediate",
     "workingOn": "Backend",
-    "rating": 4.6,
-    "button": "Add to Stack"
+    "rating": 4.7,
+    "button": "Buy Now"
   },
   {
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
     "title": "Next.js",
-    "type": "SSR / Edge",
-    "paragraph": "The React framework for full-stack web applications with hybrid static and server rendering.",
+    "type": "Framework",
+    "paragraph": "A React framework for building fast, scalable, and modern websites.",
     "userExperience": "Intermediate",
     "workingOn": "Frontend",
-    "rating": 4.9,
-    "button": "Add to Stack"
+    "rating": 4.8,
+    "button": "Buy Now"
   },
   {
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
     "title": "Python",
     "type": "Language",
-    "paragraph": "A versatile programming language widely used for web development, automation, data science, and artificial intelligence.",
+    "paragraph": "A beginner-friendly programming language used for many applications.",
     "userExperience": "Beginner Friendly",
     "workingOn": "Backend",
-    "rating": 4.9,
-    "button": "Add to Stack"
+    "rating": 4.8,
+    "button": "Buy Now"
   },
   {
     "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
     "title": "PostgreSQL",
     "type": "Database",
-    "paragraph": "A powerful open-source relational database system known for reliability, flexibility, and advanced data management.",
+    "paragraph": "A powerful relational database for reliable and scalable applications.",
     "userExperience": "Intermediate",
     "workingOn": "Backend",
-    "rating": 4.8,
-    "button": "Add to Stack"
+    "rating": 4.7,
+    "button": "Buy Now"
   }
 ]
